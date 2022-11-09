@@ -1,0 +1,48 @@
+GENERAL:
+  BTN_HOME_ENERGY_TAB: //div[@id="energy"]//span
+  BTN_TRANSPORTATION_TAB: //div[@id="transportation"]//span
+  BTN_WASTE_TAB: //div[@id="waste"]//span
+  TXT_TITLE_SCREEN: //h1[@class="page-title"]
+
+HOME:
+  TXT_TITLE_SCREEN: //h1[text()="Carbon Footprint Calculator"]
+  INPUT_NUM_HOUSEHOLD: //input[@id="ppl-in-household-input"]
+  INPUT_ZIP_CODE: //input[@id="zip-code-input"]
+  BTN_GET_STARTED: //button[@id="get-started"]
+
+HOME_ENERGY:
+  PRIMARY_SOURCE_SELECTOR: //select[@id="primaryHeatingSource"]
+  FUEL_OIL_SOURCE: //select[@id="primaryHeatingSource"]/option[contains(text(), "Fuel Oil")]
+
+  UTILITY:
+    FUEL_OIL_FIELD: //*[@id="fuelTextInput"]
+    FUEL_OIL_SELECTOR: //select[@id="fuelSelectInput"]
+    FUEL_OIL_LBS_VALUE: //li[@class="fuel"]/div/div[@class="green-lb-total"]/span
+
+REPORT:
+  TXT_CURRENT_TOTAL: //div[@class="totalEmissions totals-val"]
+  TXT_NEW_TOTAL: //div[@class="newEmissionTotal totals-val"]
+  TXT_US_AVERAGE: //div[@class="uS_avg totals-val"]
+
+SUMMARY:
+  AVERAGE: //*[@id="aSideTotalBox"]//span[@class="uS_avg aSideUSTotal"]
+  BTN_VIEW_REPORT: //button[@id="view-full-report"]
+  CURRENT_TOTAL: //*[@id="aSideTotalBox"]//span[@class="totalEmissions"]
+  LINK_STAR_OVER: //a[@id="start-over"]
+  TOTAL_AFTER_ACTIONS: //*[@id="aSideTotalBox"]//span[@class="newEmissionTotal"]
+
+TRANSPORTATION:
+  INPUT_VEHICLE_1_MILES: //input[@id="vehicle1Miles"]
+  INPUT_VEHICLE_1_GAS_MILEAGE: //input[@id="vehicle1GasMileage"]
+  MAINTENANCE_CURRENT_SELECTOR: //select[@id="maintCurrentSelect"]
+  MAINTENANCE_REDUCE_SELECTOR: //select[@id="maintReduceSelect"]
+  TXT_VEHICLE_1_EMISSION: //span[@class="vehicle1Co2"]
+  TXT_SAVED_DOLLARS_MAINTENANCE: //span[@class="maintReducDollarsSaved"]
+  TXT_SAVED_EMISSION_MAINTENANCE: //span[@class="maintReducCo2Saved"]
+
+WASTE:
+  TXT_WASTE_SAVED: //div[@id="waste-emissions"]//span[@class="wasteAlreadySaved"]
+  TXT_WASTE_WILL_SAVE: //div[@id="waste-reduction"]//span[@class="wasteWillSave"]
+  TXT_WASTE_CURRENT: //span[@id="userWasteCurrent"]
+  CHECKBOX_CURRENT_EMISSION_NEWPAPER: //input[@id="newspaperCheckbox"]
+  CHECKBOX_REDUCED_EMISSION_ALUMINUM: //input[@id="aluminumCheckboxR"]
